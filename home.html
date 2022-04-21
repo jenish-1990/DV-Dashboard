@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="house.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="all.css" />
+    <link rel="stylesheet" href="query.css" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script defer src="chart.js"></script>
+  </head>
+  <body class="body">
+    <div class="container">
+      <section class="nav">
+        <div class="nav-profile">
+          <img src="profile-icon.png" alt="user-image" class="user-image" />
+          <p class="user-name">Akhed Jenish</p>
+        </div>
+        <hr class="dash" />
+        <menu class="menu">
+          <p class="menu-name">MENU</p>
+          <ul class="menu-items">
+            <li>
+              <a href="home.html" id="menu-active"
+                ><i class="ph-house"></i>Home</a
+              >
+            </li>
+            <li>
+              <a href="#" class="link1-im"
+                ><i class="ph-telegram-logo"></i>Instant Messenger</a
+              >
+              <a href="#" class="link2-im"
+                ><i class="ph-telegram-logo"></i>Instant<br />
+                Messenger</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="ph-note-pencil"></i>Notes</a>
+            </li>
+            <li>
+              <a href="#"><i class="ph-users-three"></i>Community</a>
+            </li>
+            <li>
+              <a href="#"><i class="ph-user"></i>My Profile</a>
+            </li>
+            <li class="nav-logout">
+              <a href="#"><i class="ph-sign-out"></i>Log Out</a>
+            </li>
+          </ul>
+        </menu>
+        <a href="#" class="contact-us-btn">Contact Us</a>
+      </section>
+      <section class="search">
+        <button class="nav-btn">
+          <i class="ph-list" name="open-nav"></i
+          ><i class="ph-x" name="close-nav"></i>
+        </button>
+        <div class="search-bar">
+          <input type="text" placeholder="Search" class="search-bar-input" />
+          <button class="search-icon-btn">
+            <i class="ph-magnifying-glass"></i>
+          </button>
+        </div>
+        <button class="log-out">LOG OUT</button>
+      </section>
+      <section class="main home-main">
+        <h2 class="dashboard-title">DASHBOARD | <span>DIABETES</span></h2>
+        <div class="dash-grid">
+          <div class="dash-info">
+            <div class="info-block total-block">
+              <h4 class="total">Total Diabetes</h4>
+              <p class="total-count count">378 <span>(out of 800)</span></p>
+              <p class="total-percent percent">47.25%</p>
+            </div>
+            <div class="info-block male-block">
+              <h4 class="men">Diabetes for Men</h4>
+              <p class="men-count count">240 <span>(out of 400)</span></p>
+              <p class="men-percent percent">63.49%</p>
+            </div>
+            <div class="info-block female-block">
+              <h4 class="female">Diabetes for Female</h4>
+              <p class="female-count count">138 <span>(out of 400)</span></p>
+              <p class="female-percent percent">34.5%</p>
+            </div>
+          </div>
+          <div class="dash-pieChart">
+            <p>Diabetes for all</p>
+            <div id="piechart"></div>
+          </div>
+          <div class="dash-columnChart">
+            <p>Diabetes between Male and Female at different age</p>
+            <div id="columnchart"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
