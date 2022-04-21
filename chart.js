@@ -56,14 +56,13 @@ function drawColumnChart() {
   var options = {
     vAxis: { title: "People" },
     hAxis: { title: "Age" },
-    width: 1300,
-    height: 400,
+    height: 450,
     colors: ["#228be6", "#e64980", "#fa5252"],
-    chartArea: { left: 200, top: 60 },
+    chartArea: { left: 200, top: 35, width: "70%", height: "80%" },
     seriesType: "bars",
     animation: {
-      duration: 300,
-      easing: "in",
+      duration: 4000,
+      easing: "out",
       startup: "true",
     },
   };
