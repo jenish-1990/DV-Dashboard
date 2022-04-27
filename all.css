@@ -323,7 +323,7 @@ html {
 .dash-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: repeat(2, 1fr); */
+  /* grid-template-rows: repeat(3, 1fr); */
   column-gap: 2rem;
   row-gap: 2rem;
 }
@@ -334,7 +334,7 @@ html {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 2rem;
-  row-gap: 2.5rem;
+  row-gap: 2rem;
 }
 
 .info-block {
@@ -429,7 +429,6 @@ html {
 #piechart {
   max-width: fit-content;
   height: fit-content;
-  margin-bottom: 1.5rem;
 }
 /* PIE END */
 
@@ -451,4 +450,32 @@ html {
   margin-bottom: 1rem;
 }
 /* COLUMN END */
+
+/* AREA CHART */
+.dash-areaChart {
+  grid-column: 1/ -1;
+  background-color: #fff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 15px !important;
+}
+
+.dash-areaChart p {
+  padding: 1rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+#areachart {
+  margin-bottom: 1rem;
+}
+/* AREA END */
+
+.men,
+.female {
+  line-height: 2rem;
+}
+
+.count {
+  margin-bottom: 1rem;
+}
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@ HOME END @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ ;
